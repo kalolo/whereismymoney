@@ -1,0 +1,29 @@
+{
+  "name": "Where is my money",
+  "private": true,
+  "description": "",
+  "main": "",
+  "authors": [
+    "kalolo@nearsoft.com"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "1.9.1",
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "angular-animate": "^1.5.7",
+    "angular-cookies": "^1.5.7"
+  }
+}

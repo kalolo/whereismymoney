@@ -1,0 +1,13 @@
+<div class="well" ng-show="!$ctrl.ready">
+    Loading...
+</div>
+
+<div class="row" ng-show="$ctrl.ready">
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="inputFrom">Amount:</label>
+            <input type="text" class="form-control" id="inputFrom" placeholder="Amount" ng-model="amount"/>
+        </div>
+        <button type="button" id="btn-search" class="btn btn-default" ng-click="$ctrl.addPayment(amount)">Add</button>
+    </form>
+</div>

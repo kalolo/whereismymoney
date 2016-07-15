@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="whereIsMyMoney">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Where is my money</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link href="/css/app.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/vendor/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-loader/angular-loader.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-mocks/angular-mocks.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-cookies/angular-cookies.min.js"></script>
+
+
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/routes.js"></script>
+    <script type="text/javascript" src="/app/services/authService.js"></script>
+    <script type="text/javascript" src="/app/services/userSession.js"></script>
+    <script type="text/javascript" src="/app/services/paymentService.js"></script>
+    <script type="text/javascript" src="/app/services/geoLocationService.js"></script>
+    <script type="text/javascript" src="/app/login/login.component.js"></script>
+    <script type="text/javascript" src="/app/logout/logout.component.js"></script>
+    <script type="text/javascript" src="/app/payment/payment.component.js"></script>
+    <script type="text/javascript" src="/app/history/history.component.js"></script>
+    <!--script type="text/javascript" src="/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script-->
+
+</head>
+
+<body>
+
+<div class="container" ng-controller="mainCtrl as ctrl">
+
+    <navigation is-logged="isLogged"></navigation>
+
+    <div ng-view></div>
+
+</div>
+</body>
+</html>

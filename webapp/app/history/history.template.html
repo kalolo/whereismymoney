@@ -1,0 +1,20 @@
+<div class="row">
+    <h4>History</h4>
+
+
+    <table class="table table-stripped">
+        <tbody>
+            <tr>
+                <th>Amount</th>
+                <th>Description</th>
+            </tr>
+        </tbodY>
+        <tbody ng-repeat="payment in $ctrl.payments">
+            <tr>
+                <td>{{ payment.amount }}</td>
+                <td>{{ payment.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
