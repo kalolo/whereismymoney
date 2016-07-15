@@ -1,3 +1,7 @@
 .idea
-/api/.idea
-/webapp/.idea
+*.iml
+api/.idea
+webapp/.idea
+webapp/vendor/
+webapp/node_modules
+api/target
